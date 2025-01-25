@@ -1,0 +1,15 @@
+{
+    "editor.formatOnSave": true,
+    "eslint.format.enable": true,
+    "stylelint.enable": true,
+    "stylelint.validate": [
+      "scss"
+    ],
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.fixAll.stylelint": "explicit"
+    },
+    "editor.minimap.autohide": false,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2
+  }
