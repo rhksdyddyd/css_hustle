@@ -33,7 +33,7 @@ export default function RootLayout({
               <Link href="/read/1">Simple Tabs</Link>
             </li>
             <li>
-              <Link href="/read/2">css</Link>
+              <Link href="/read/2">Simple Block Style</Link>
             </li>
           </ol>
         </nav>
