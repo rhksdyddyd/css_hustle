@@ -26,14 +26,24 @@ export default function RootLayout({
           }}
         >
           <h1>
-            <Link href="/">Lists</Link>
+            <Link href="/">#</Link>
           </h1>
+          <h2>Tutorial</h2>
           <ol>
             <li>
-              <Link href="/read/1">Simple Tabs</Link>
+              <Link href="/tutorial/simpleStyle1">Simple Style 1</Link>
             </li>
+          </ol>
+          <h2>Module</h2>
+          <ol>
             <li>
-              <Link href="/read/2">Simple Block Style</Link>
+              <Link href="/module/tabs1">Tabs 1</Link>
+            </li>
+          </ol>
+          <h2>Animation</h2>
+          <ol>
+            <li>
+              <Link href="/animation/spaceButton">Space Button</Link>
             </li>
           </ol>
         </nav>
