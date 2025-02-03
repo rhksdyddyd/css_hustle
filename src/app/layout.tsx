@@ -45,6 +45,9 @@ export default function RootLayout({
             <li>
               <Link href="/animation/spaceButton">Space Button</Link>
             </li>
+            <li>
+              <Link href="/animation/watermelon">Watermelon</Link>
+            </li>
           </ol>
         </nav>
         {children}
