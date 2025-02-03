@@ -48,6 +48,9 @@ export default function RootLayout({
             <li>
               <Link href="/animation/watermelon">Watermelon</Link>
             </li>
+            <li>
+              <Link href="/animation/rotatingCard">Rotating Card</Link>
+            </li>
           </ol>
         </nav>
         {children}
