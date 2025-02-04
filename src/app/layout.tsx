@@ -51,6 +51,9 @@ export default function RootLayout({
             <li>
               <Link href="/animation/rotatingCard">Rotating Card</Link>
             </li>
+            <li>
+              <Link href="/animation/animatedLogin">Animated Login</Link>
+            </li>
           </ol>
         </nav>
         {children}
