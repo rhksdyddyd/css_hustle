@@ -54,6 +54,9 @@ export default function RootLayout({
             <li>
               <Link href="/animation/animatedLogin">Animated Login</Link>
             </li>
+            <li>
+              <Link href="/animation/animatedLogin2">Animated Login 2</Link>
+            </li>
           </ol>
         </nav>
         {children}
