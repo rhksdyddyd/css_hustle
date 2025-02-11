@@ -60,6 +60,9 @@ export default function RootLayout({
             <li>
               <Link href="/animation/typeWriter">Type Writer</Link>
             </li>
+            <li>
+              <Link href="/animation/likeButton">Like Button</Link>
+            </li>
           </ol>
         </nav>
         {children}
