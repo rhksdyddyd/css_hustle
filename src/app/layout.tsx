@@ -63,6 +63,9 @@ export default function RootLayout({
             <li>
               <Link href="/animation/likeButton">Like Button</Link>
             </li>
+            <li>
+              <Link href="/animation/soundWave">Sound Wave</Link>
+            </li>
           </ol>
         </nav>
         {children}
