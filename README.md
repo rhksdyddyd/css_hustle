@@ -11,3 +11,16 @@ npm version: 10.9.2
 
 npm install<br>
 npm run dev
+
+## 주요 패키지
+
+React Next
+
+## 예시
+
+![edit](/static/buttoneffect.gif)<br>
+![edit](/static/like.gif)<br>
+![edit](/static/typewriter.gif)<br>
+![edit](/static/rotate.gif)<br>
+![edit](/static/login1.gif)<br>
+![edit](/static/login2.gif)<br>
