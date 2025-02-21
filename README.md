@@ -14,7 +14,7 @@ npm run dev
 
 ## 주요 패키지
 
-React Next
+React, Next.js, Webpack
 
 ## 예시
 
