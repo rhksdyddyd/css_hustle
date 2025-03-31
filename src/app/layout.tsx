@@ -69,6 +69,9 @@ export default function RootLayout({
             <li>
               <Link href="/animation/wave">Wave</Link>
             </li>
+            <li>
+              <Link href="/animation/spin">Spin</Link>
+            </li>
           </ol>
         </nav>
         {children}
