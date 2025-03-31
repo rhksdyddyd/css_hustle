@@ -73,6 +73,12 @@ export default function RootLayout({
               <Link href="/animation/spin">Spin</Link>
             </li>
           </ol>
+          <h2>3d</h2>
+          <ol>
+            <li>
+              <Link href="/3d/first-step">first-step</Link>
+            </li>
+          </ol>
         </nav>
         {children}
       </body>
