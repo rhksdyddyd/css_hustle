@@ -78,6 +78,9 @@ export default function RootLayout({
             <li>
               <Link href="/3d/first-step">first-step</Link>
             </li>
+            <li>
+              <Link href="/3d/orbit-controls">orbit-controls</Link>
+            </li>
           </ol>
         </nav>
         {children}
