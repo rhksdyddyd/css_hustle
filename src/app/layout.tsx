@@ -81,6 +81,9 @@ export default function RootLayout({
             <li>
               <Link href="/3d/orbit-controls">orbit-controls</Link>
             </li>
+            <li>
+              <Link href="/3d/rotate-animation">rotate-animation</Link>
+            </li>
           </ol>
         </nav>
         {children}
