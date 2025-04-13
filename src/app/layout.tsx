@@ -42,6 +42,9 @@ export default function RootLayout({
             <li>
               <Link href="/module/infinite-carousel1">Infinite Carousel 1</Link>
             </li>
+            <li>
+              <Link href="/module/simple-carousel1">Simple Carousel 1</Link>
+            </li>
           </ol>
           <h2>Animation</h2>
           <ol>
