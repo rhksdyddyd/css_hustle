@@ -17,12 +17,12 @@ export default function RootLayout({
       <body style={{ display: 'flex', margin: '0' }}>
         <nav
           style={{
-            padding: '0 5px',
+            padding: '0 15px',
             width: '20%',
             height: '100vh',
             boxSizing: 'border-box',
             borderRight: '3px solid #efefef',
-            marginRight: '15px',
+            marginRight: '0px',
           }}
         >
           <h1>

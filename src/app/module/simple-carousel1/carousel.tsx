@@ -1,6 +1,6 @@
 'use client';
 
-import { TouchEventHandler, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const ChevronLeft = (
   <svg
@@ -42,9 +42,6 @@ interface Props {
   carouselList: string[];
 }
 
-let touchStartX: number;
-let touchEndX: number;
-
 const Carousel = ({ carouselList }: Props) => {
   const [currIndex, setCurrIndex] = useState(1);
   const [currList, setCurrList] = useState<string[]>();
@@ -63,7 +60,8 @@ const Carousel = ({ carouselList }: Props) => {
 
   useEffect(() => {
     if (carouselRef.current !== null) {
-      carouselRef.current.style.transform = `translateX(-${currIndex}00%)`;
+      const offset = 1030 * currIndex; // size of image
+      carouselRef.current.style.transform = `translateX(-${offset}px)`;
     }
   }, [currIndex]);
 
@@ -91,38 +89,9 @@ const Carousel = ({ carouselList }: Props) => {
     }
   };
 
-  const handleTouchStart: TouchEventHandler<HTMLDivElement> = e => {
-    touchStartX = e.nativeEvent.touches[0].clientX;
-  };
-
-  const handleTouchMove: TouchEventHandler<HTMLDivElement> = e => {
-    const currTouchX = e.nativeEvent.changedTouches[0].clientX;
-
-    if (carouselRef.current !== null) {
-      carouselRef.current.style.transform = `translateX(calc(-${currIndex}00% - ${
-        (touchStartX - currTouchX) * 2 || 0
-      }px))`;
-    }
-  };
-
-  const handleTouchEnd: TouchEventHandler<HTMLDivElement> = e => {
-    touchEndX = e.nativeEvent.changedTouches[0].clientX;
-
-    if (touchStartX >= touchEndX) {
-      handleSwipe(1);
-    } else {
-      handleSwipe(-1);
-    }
-  };
-
   return (
     <div className={'simple-carousel1-container'}>
-      <div
-        className={'carouselWrapper'}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
-      >
+      <div className={'carouselWrapper'}>
         <button
           type="button"
           className={'swipeLeft'}
@@ -140,10 +109,9 @@ const Carousel = ({ carouselList }: Props) => {
         <ul className={'carousel'} ref={carouselRef}>
           {currList?.map((image, idx) => {
             const key = `${image}-${idx}`;
-
             return (
               <li key={key} className={'carouselItem'}>
-                <img src={image} alt="carousel-img" />
+                <img src={image} alt="carousel-img" width={1000} height={500} />
               </li>
             );
           })}
